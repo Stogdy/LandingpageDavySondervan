@@ -1,22 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<body>
-<article><h1>Lorem ipsum dolor sit amet</h1>
-<p>consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, 
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, 
-sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<button>Button</button>
-</article>
 
+<body id="js--body">
+    <header class="header">
+        <h1 class="headerTitle">BlackBeard</h1>
+        <nav role="navigation">
+            <div id="menuToggle">
+              
+              <input type="checkbox" id="menuCheckbox" />
+              
+              
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              
+              <ul id="menu">
+                
+                
+                <li>
+                  <a href="#">
+                    <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                  </a>
+                </li>
+                <li>
+                  <a href="#about">
+                    <label for="menuCheckbox" onclick="this.parentNode.click();">About Blackbeard</label>
+                  </a>
+                </li>
+                
+                
+                <li><label for="menuCheckbox"><a>Info about Blackbeard</a></label></li>
+                <li><label for="menuCheckbox"><a>Contact Blackbeard anytime</a></label></li>
+                
+                
+                <li>
+                  <a href="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" target="_blank">I want more Blackbeard</a>
+                </li>
+              </ul>
+            </div>
+          </nav>    </header>
+    
+    <main>
+        <figure class="bigFigure">
+            <img src="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" alt="japanfoto">
+        </figure>
+
+        <section class="collections">
+            <h2 class="collectionsTitle">Blackbeard Collectie!</h2>
+            <ul class="collectionsList">
+                <li class="collectionsListItem"><img src="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" alt=""></li>
+                <li class="collectionsListItem"><img src="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" alt=""></li>
+                <li class="collectionsListItem"><img src="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" alt=""></li>
+                <li class="collectionsListItem"><img src="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" alt=""></li>
+                <li class="collectionsListItem"><img src="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" alt=""></li>
+                <li class="collectionsListItem"><img src="images/blackbeard-writing-shanks-out-of-the-story-v0-fpvo19yeswcd1 (1).webp" alt=""></li>
+            </ul>
+        </section>
+        <section class="info">
+            <div class="block">
+                <H2 class="infoTitle">Why did I make Blackbeard?</H2>
+                <p>Blackbeard (Marshall D. Teach) was created by Eiichiro Oda to serve as a dark counterpart to Monkey D. Luffy in One Piece. Oda designed him to embody traits like ambition, betrayal, and an unrelenting hunger for power, contrasting Luffy's freedom-loving and loyal nature.</p>
+            </div>
+            <div class="block">
+                <h2 class="infoTitle">Who is Blackbeard?</h2>
+                <p>Blackbeard, also known as Marshall D. Teach, is a character from One Piece created by Eiichiro Oda. He is the captain of the Blackbeard Pirates and one of the most notorious villains in the series. Teach is a former member of the Whitebeard Pirates who betrayed his crew to obtain the powerful Yami Yami no Mi, a Logia-type Devil Fruit that allows him to control darkness. Later, he also acquired the Gura Gura no Mi, giving him the power to create earthquakes. Ambitious and ruthless, Blackbeard aims to become the Pirate King by manipulating events and pursuing ultimate power.</p>
+            </div>
+           
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <form>
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="topic">Type of Inquiry:</label>
+                  <select id="topic" name="topic">
+                      <option value="general">General Inquiry</option>
+                      <option value="support">Support</option>
+                      <option value="feedback">Feedback</option>
+                  </select>
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              
+                  <button type="submit" class="cta-button">Submit</button>
+              </form>
+              
+            </form>
+        </section>
+
+    </main>
 </body>
+
 </html>
